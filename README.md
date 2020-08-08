@@ -93,5 +93,18 @@ bower install
 - [ ] Markdown preview while editing
 - [ ] Html editor
 
+## windwos下部署中遇到的问题总结
+1. 安装redis并启动服务 [https://blog.csdn.net/weixin_43937395/article/details/103900223]
+2. 安装bower： 
+    npm install bower -g--registry=https://registry.npm.taobao.org （需要先安装npm）
+    git bash下 安装成功bower但bower command not found windows
+        解决方法 2.1 npm config get prefix
+                2.2 将上述地址加入环境变量path中，并重启git bash
+3.启动bower，安装相关依赖：
+    cd SpringBlog
+    bower install
+4. Intellij IDEA中安装Lombok插件，并重启
+5. 修改application-dev 中mysql用户密码，在mysql数据库中创建spring_blog_dev数据库。
+6. 在IDEA中启动SpringBlogApplication.java
 ## License
 Modified BSD license. Copyright (c) 2015 - 2018, Jiankun LEI (Raysmond).
